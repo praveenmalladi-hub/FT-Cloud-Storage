@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app_template_input_var">
+    <sys_app_template_input_var action="INSERT_OR_UPDATE">
+        <default/>
+        <description/>
+        <flow_input_variable display_value="file_description">b26171b2c3a2201054ffca568640dd67</flow_input_variable>
+        <mandatory>false</mandatory>
+        <name>file_description</name>
+        <sys_class_name>sys_app_template_input_var</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:16:33</sys_created_on>
+        <sys_id>206131b2c3a2201054ffca568640dde2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>file_description</sys_name>
+        <sys_package display_value="FT Cloud Storage" source="sn_ft_cloud_storag">4d96a9bac362201054ffca568640ddff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FT Cloud Storage">4d96a9bac362201054ffca568640ddff</sys_scope>
+        <sys_update_name>sys_app_template_input_var_206131b2c3a2201054ffca568640dde2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:16:33</sys_updated_on>
+        <template display_value="FT - Copy new record Attachments to a cloud storage destination">e3f661fac362201054ffca568640dd20</template>
+        <type>string</type>
+    </sys_app_template_input_var>
+</record_update>
