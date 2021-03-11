@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access/>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>ft__copy_new_record_attachments_to_google_drive</internal_name>
+        <label_cache>[{"name":"0d05baf2-f5c3-4ebe-ba7b-468100679265.drive_item","label":"1➛Drive Item","reference_display":"Drive Item","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDb119bfa25b4b3300a20507c89340c9b9","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"50396412-31bc-4a8a-bc06-0d3dde1af5b8"}},{"name":"0d05baf2-f5c3-4ebe-ba7b-468100679265.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"11237abd-d94d-45ca-9dba-0b3f2b104fa0"}},{"name":"0d05baf2-f5c3-4ebe-ba7b-468100679265.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"f407c216-e82a-4f2b-b217-bc88c85067a4"}},{"name":"0d05baf2-f5c3-4ebe-ba7b-468100679265.praveen","label":"1➛Praveen","reference_display":"Praveen","type":"object","base_type":"object","attributes":{"sourceId":"e6375515-c9a2-4056-9a58-e62f668d2fdd","uiTypeLabel":"Object","co_type_name":"FDce18dd3e352220109292b670aa242dde","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"baad7bf0-bdde-475f-b21c-004934dc9611","uiType":"object","uiUniqueId":"1fc96ea3-8178-44b1-b6b2-7884fd4536b1"}},{"name":"a562cd90-1966-4b27-acb3-b16947051bf1.file_id","label":"2➛File ID","reference_display":"File ID","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"9c5b8835-d723-4c6f-a2c3-6a0ae9277525"}},{"name":"a562cd90-1966-4b27-acb3-b16947051bf1.file_url","label":"2➛File URL","reference_display":"File URL","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"6c7279a3-93cb-4339-bf72-3e502103fe84"}},{"name":"a562cd90-1966-4b27-acb3-b16947051bf1.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"c3aa4b43-05f2-4c38-bfe2-f07dde87f71d"}},{"name":"a562cd90-1966-4b27-acb3-b16947051bf1.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"98755f60-7403-4325-bbaa-9ac0cb7742fa"}},{"name":"Created_1.current","label":"Trigger➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","attributes":{}},{"name":"0d05baf2-f5c3-4ebe-ba7b-468100679265.drive_item.files.files0.id","label":"1➛Drive Item➛Folders➛Folder➛Folder ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"Created_1.current.file_name","label":"Trigger➛Attachment Record➛File name","reference":"","reference_display":"File name","type":"string","base_type":"string","parent_table_name":"sys_attachment","column_name":"file_name"}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>FT - Copy new record attachments to Google Drive</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:23:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c11371f2c3a2201054ffca568640dd9d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>FT - Copy new record attachments to Google Drive</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="FT Cloud Storage" source="sn_ft_cloud_storag">4d96a9bac362201054ffca568640ddff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FT Cloud Storage">4d96a9bac362201054ffca568640ddff</sys_scope>
+        <sys_update_name>sys_hub_flow_c11371f2c3a2201054ffca568640dd9d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=c11371f2c3a2201054ffca568640dd9d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c11371f2c3a2201054ffca568640dd9d"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=c11371f2c3a2201054ffca568640dd9d^sys_idNOT INb5d3b9f2c3a2201054ffca568640dd29,fdd3b9f2c3a2201054ffca568640dd0b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Copy Attachment to Drive">72fa6d18db45bb006a555275ca9619bf</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="FT - Copy new record attachments to Google Drive">c11371f2c3a2201054ffca568640dd9d</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>b5d3b9f2c3a2201054ffca568640dd29</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="FT Cloud Storage">4d96a9bac362201054ffca568640ddff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <ui_id>a562cd90-1966-4b27-acb3-b16947051bf1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b5d3b9f2c3a2201054ffca568640dd29"/>
+    <sys_element_mapping action="delete_multiple" query="id=b5d3b9f2c3a2201054ffca568640dd29"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_record</field>
+        <id>b5d3b9f2c3a2201054ffca568640dd29</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>b5d3b9f2c3a2201054ffca568640dd2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_72fa6d18db45bb006a555275ca9619bf</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file_name</field>
+        <id>b5d3b9f2c3a2201054ffca568640dd29</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>31d3b9f2c3a2201054ffca568640dd2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_72fa6d18db45bb006a555275ca9619bf</table>
+        <value>{{Created_1.current.file_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>parent_folder_id</field>
+        <id>b5d3b9f2c3a2201054ffca568640dd29</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>f1d3b9f2c3a2201054ffca568640dd2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_72fa6d18db45bb006a555275ca9619bf</table>
+        <value>{{0d05baf2-f5c3-4ebe-ba7b-468100679265.drive_item.files.files0.id}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Files Or Folders">e74b98e7db167b003e146583ca961905</action_type>
+        <action_type_parent/>
+        <comment>Ensure the folder path is populated - you can hard code it or use a data pill to point to a field where it is stored.</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="FT - Copy new record attachments to Google Drive">c11371f2c3a2201054ffca568640dd9d</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>fdd3b9f2c3a2201054ffca568640dd0b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="FT Cloud Storage">4d96a9bac362201054ffca568640ddff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <ui_id>0d05baf2-f5c3-4ebe-ba7b-468100679265</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fdd3b9f2c3a2201054ffca568640dd0b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fdd3b9f2c3a2201054ffca568640dd0b</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>3dd3b9f2c3a2201054ffca568640dd0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <value>{"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FD7d19bfa2ab4b33000836b0ce17b9866d":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD7d19bfa2ab4b33000836b0ce17b9866d.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Readers\",\"mandatory\":\"false\",\"child_name\":\"Reader0\",\"uiUniqueId\":\"f66408d8-bd48-496d-858f-5256bcc7d583\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD7d19bfa2ab4b33000836b0ce17b9866d\",\"child_label\":\"Reader\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.string\",\"mapped\":\"{}\",\"child_type\":\"string\",\"order\":\"7\",\"max_length\":\"8000\",\"child_uiUniqueId\":\"bce6bb9d-5e39-4f12-9446-8d0a21ec6304\"}"}},"complexObject":{"name$":"FD7d19bfa2ab4b33000836b0ce17b9866d","$COCollectionField":[""]},"version":"1.0"}</value>
+        <variable display_value="Readers">bb4b98e7db167b003e146583ca961953</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fdd3b9f2c3a2201054ffca568640dd0b</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>fdd3b9f2c3a2201054ffca568640dd0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <value>{"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDb519bfa23e4b3300df19374944c88f6c":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDb519bfa23e4b3300df19374944c88f6c.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Writers\",\"mandatory\":\"false\",\"child_name\":\"Writer0\",\"uiUniqueId\":\"3a3f347d-019e-401c-9e82-fe20ff4283a2\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FDb519bfa23e4b3300df19374944c88f6c\",\"child_label\":\"Writer\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.string\",\"mapped\":\"{}\",\"child_type\":\"string\",\"order\":\"6\",\"max_length\":\"8000\",\"child_uiUniqueId\":\"479f4552-0bcd-4876-ad96-84dc5c9ce5c0\"}"}},"complexObject":{"name$":"FDb519bfa23e4b3300df19374944c88f6c","$COCollectionField":[""]},"version":"1.0"}</value>
+        <variable display_value="Writers">3b4b98e7db167b003e146583ca961934</variable>
+    </sys_variable_value>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=c11371f2c3a2201054ffca568640dd9d^sys_idNOT INfdd379f2c3a2201054ffca568640ddeb"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="FT - Copy new record attachments to Google Drive">c11371f2c3a2201054ffca568640dd9d</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>fdd379f2c3a2201054ffca568640ddeb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fdd379f2c3a2201054ffca568640ddeb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>fdd379f2c3a2201054ffca568640ddeb</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>31d379f2c3a2201054ffca568640dded</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <value>sys_attachment</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>fdd379f2c3a2201054ffca568640ddeb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>7dd379f2c3a2201054ffca568640ddec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c11371f2c3a2201054ffca568640dd9d^sys_idNOT IN451371f2c3a2201054ffca568640dd9e"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c11371f2c3a2201054ffca568640dd9d</id>
+        <name>FT - Copy new record attachments to Google Drive</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:23:48</sys_created_on>
+        <sys_id>451371f2c3a2201054ffca568640dd9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:23:48</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=c11371f2c3a2201054ffca568640dd9d^sys_idNOT IN75d379f2c3a2201054ffca568640dddf,f1d379f2c3a2201054ffca568640dde5"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="FT - Copy new record attachments to Google Drive">c11371f2c3a2201054ffca568640dd9d</model>
+        <model_id>c11371f2c3a2201054ffca568640dd9d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c11371f2c3a2201054ffca568640dd9d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>75d379f2c3a2201054ffca568640dddf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FT Cloud Storage">4d96a9bac362201054ffca568640ddff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="FT - Copy new record attachments to Google Drive">c11371f2c3a2201054ffca568640dd9d</model>
+        <model_id>c11371f2c3a2201054ffca568640dd9d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c11371f2c3a2201054ffca568640dd9d</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>f1d379f2c3a2201054ffca568640dde5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FT Cloud Storage">4d96a9bac362201054ffca568640ddff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=c11371f2c3a2201054ffca568640dd9d^sys_idNOT INb5d3b9f2c3a2201054ffca568640dd29,fdd3b9f2c3a2201054ffca568640dd0b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Copy Attachment to Drive">72fa6d18db45bb006a555275ca9619bf</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="FT - Copy new record attachments to Google Drive">c11371f2c3a2201054ffca568640dd9d</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>b5d3b9f2c3a2201054ffca568640dd29</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="FT Cloud Storage">4d96a9bac362201054ffca568640ddff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <ui_id>a562cd90-1966-4b27-acb3-b16947051bf1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b5d3b9f2c3a2201054ffca568640dd29"/>
+    <sys_element_mapping action="delete_multiple" query="id=b5d3b9f2c3a2201054ffca568640dd29"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_record</field>
+        <id>b5d3b9f2c3a2201054ffca568640dd29</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>b5d3b9f2c3a2201054ffca568640dd2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_72fa6d18db45bb006a555275ca9619bf</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file_name</field>
+        <id>b5d3b9f2c3a2201054ffca568640dd29</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>31d3b9f2c3a2201054ffca568640dd2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_72fa6d18db45bb006a555275ca9619bf</table>
+        <value>{{Created_1.current.file_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>parent_folder_id</field>
+        <id>b5d3b9f2c3a2201054ffca568640dd29</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>f1d3b9f2c3a2201054ffca568640dd2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_72fa6d18db45bb006a555275ca9619bf</table>
+        <value>{{0d05baf2-f5c3-4ebe-ba7b-468100679265.drive_item.files.files0.id}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Files Or Folders">e74b98e7db167b003e146583ca961905</action_type>
+        <action_type_parent/>
+        <comment>Ensure the folder path is populated - you can hard code it or use a data pill to point to a field where it is stored.</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="FT - Copy new record attachments to Google Drive">c11371f2c3a2201054ffca568640dd9d</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>fdd3b9f2c3a2201054ffca568640dd0b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="FT Cloud Storage">4d96a9bac362201054ffca568640ddff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <ui_id>0d05baf2-f5c3-4ebe-ba7b-468100679265</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fdd3b9f2c3a2201054ffca568640dd0b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fdd3b9f2c3a2201054ffca568640dd0b</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>3dd3b9f2c3a2201054ffca568640dd0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <value>{"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FD7d19bfa2ab4b33000836b0ce17b9866d":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD7d19bfa2ab4b33000836b0ce17b9866d.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Readers\",\"mandatory\":\"false\",\"child_name\":\"Reader0\",\"uiUniqueId\":\"f66408d8-bd48-496d-858f-5256bcc7d583\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD7d19bfa2ab4b33000836b0ce17b9866d\",\"child_label\":\"Reader\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.string\",\"mapped\":\"{}\",\"child_type\":\"string\",\"order\":\"7\",\"max_length\":\"8000\",\"child_uiUniqueId\":\"bce6bb9d-5e39-4f12-9446-8d0a21ec6304\"}"}},"complexObject":{"name$":"FD7d19bfa2ab4b33000836b0ce17b9866d","$COCollectionField":[""]},"version":"1.0"}</value>
+        <variable display_value="Readers">bb4b98e7db167b003e146583ca961953</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fdd3b9f2c3a2201054ffca568640dd0b</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>fdd3b9f2c3a2201054ffca568640dd0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <value>{"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDb519bfa23e4b3300df19374944c88f6c":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDb519bfa23e4b3300df19374944c88f6c.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Writers\",\"mandatory\":\"false\",\"child_name\":\"Writer0\",\"uiUniqueId\":\"3a3f347d-019e-401c-9e82-fe20ff4283a2\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FDb519bfa23e4b3300df19374944c88f6c\",\"child_label\":\"Writer\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.string\",\"mapped\":\"{}\",\"child_type\":\"string\",\"order\":\"6\",\"max_length\":\"8000\",\"child_uiUniqueId\":\"479f4552-0bcd-4876-ad96-84dc5c9ce5c0\"}"}},"complexObject":{"name$":"FDb519bfa23e4b3300df19374944c88f6c","$COCollectionField":[""]},"version":"1.0"}</value>
+        <variable display_value="Writers">3b4b98e7db167b003e146583ca961934</variable>
+    </sys_variable_value>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_c11371f2c3a2201054ffca568640dd9d^sys_idNOT IN35d379f2c3a2201054ffca568640dde9,3dd379f2c3a2201054ffca568640dde3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c11371f2c3a2201054ffca568640dd9d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>35d379f2c3a2201054ffca568640dde9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="FT Cloud Storage" source="sn_ft_cloud_storag">4d96a9bac362201054ffca568640ddff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FT Cloud Storage">4d96a9bac362201054ffca568640ddff</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_c11371f2c3a2201054ffca568640dd9d_table_name_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c11371f2c3a2201054ffca568640dd9d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-01 07:27:08</sys_created_on>
+        <sys_id>3dd379f2c3a2201054ffca568640dde3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="FT Cloud Storage" source="sn_ft_cloud_storag">4d96a9bac362201054ffca568640ddff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FT Cloud Storage">4d96a9bac362201054ffca568640ddff</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_c11371f2c3a2201054ffca568640dd9d_current_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 07:27:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>
