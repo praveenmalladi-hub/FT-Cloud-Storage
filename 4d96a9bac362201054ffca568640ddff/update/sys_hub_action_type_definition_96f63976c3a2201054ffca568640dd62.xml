@@ -13,7 +13,7 @@
         <ih_action>false</ih_action>
         <internal_name>copy_new_record_attachments_to_google_drive</internal_name>
         <label_cache>[{"name":"{{action.flow_scope_sys_id}}","label":"action➛flow_scope_sys_id","type":"action","ref":""},{"name":"{{action.new_flow_sys_id}}","label":"action➛new_flow_sys_id","type":"action","ref":""},{"name":"{{action.file_or_folder_name}}","label":"action➛file_or_folder_name","type":"action","ref":""},{"name":"{{action.file_description}}","label":"action➛file_description","type":"action","ref":""},{"name":"{{action.googledrive_connection}}","label":"action➛googledrive_connection","type":"action","ref":""},{"name":"{{action.trigger_table}}","label":"action➛trigger_table","type":"action","ref":""}]</label_cache>
-        <latest_snapshot>ac10f8c2d47ae010f8778cb18582be84</latest_snapshot>
+        <latest_snapshot>80098a23d4bae410f8778cb18582be92</latest_snapshot>
         <master_snapshot>8988f5b6c3a2201054ffca568640dd07</master_snapshot>
         <name>Update Copy new record attachments to Google Drive</name>
         <natlang/>
@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>96f63976c3a2201054ffca568640dd62</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Update Copy new record attachments to Google Drive</sys_name>
         <sys_overrides/>
         <sys_package display_value="FT Cloud Storage" source="sn_ft_cloud_storag">4d96a9bac362201054ffca568640ddff</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="FT Cloud Storage">4d96a9bac362201054ffca568640ddff</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_96f63976c3a2201054ffca568640dd62</sys_update_name>
         <sys_updated_by>maint</sys_updated_by>
-        <sys_updated_on>2021-03-11 04:51:18</sys_updated_on>
+        <sys_updated_on>2021-03-16 03:10:44</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -56,10 +56,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-03-01 07:47:32</sys_created_on>
         <sys_id>7488b5b6c3a2201054ffca568640ddc7</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="FT Cloud Storage">4d96a9bac362201054ffca568640ddff</sys_scope>
         <sys_updated_by>maint</sys_updated_by>
-        <sys_updated_on>2021-03-11 04:51:16</sys_updated_on>
+        <sys_updated_on>2021-03-16 03:10:42</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7488b5b6c3a2201054ffca568640ddc7"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -84,9 +84,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-03-01 07:47:33</sys_created_on>
         <sys_id>f888b5b6c3a2201054ffca568640dde9</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>maint</sys_updated_by>
-        <sys_updated_on>2021-03-11 04:51:16</sys_updated_on>
+        <sys_updated_on>2021-03-16 03:10:42</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   var inputScope = inputs.flow_scope_sys_id;
   var newFlow = inputs.new_flow_sys_id;
@@ -102,7 +102,7 @@
   sn_flow.FlowTemplates.updateFlowActions(newFlow, '1', 'file_or_folder_name', folderName);
   
   // update folderpath onedrive
-  sn_flow.FlowTemplates.updateFlowActions(newFlow, '2', 'file_description', fileDescription);
+  sn_flow.FlowTemplates.updateFlowActions(newFlow, '3', 'file_description', fileDescription);
 
   new global.FlowTemplatesHelper().activateConnection(googledriveConnection);
 })(inputs, outputs);
@@ -1197,10 +1197,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-03-01 07:47:32</sys_created_on>
         <sys_id>7488b5b6c3a2201054ffca568640ddc7</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="FT Cloud Storage">4d96a9bac362201054ffca568640ddff</sys_scope>
         <sys_updated_by>maint</sys_updated_by>
-        <sys_updated_on>2021-03-11 04:51:16</sys_updated_on>
+        <sys_updated_on>2021-03-16 03:10:42</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7488b5b6c3a2201054ffca568640ddc7"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1225,9 +1225,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-03-01 07:47:33</sys_created_on>
         <sys_id>f888b5b6c3a2201054ffca568640dde9</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>maint</sys_updated_by>
-        <sys_updated_on>2021-03-11 04:51:16</sys_updated_on>
+        <sys_updated_on>2021-03-16 03:10:42</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   var inputScope = inputs.flow_scope_sys_id;
   var newFlow = inputs.new_flow_sys_id;
@@ -1243,7 +1243,7 @@
   sn_flow.FlowTemplates.updateFlowActions(newFlow, '1', 'file_or_folder_name', folderName);
   
   // update folderpath onedrive
-  sn_flow.FlowTemplates.updateFlowActions(newFlow, '2', 'file_description', fileDescription);
+  sn_flow.FlowTemplates.updateFlowActions(newFlow, '3', 'file_description', fileDescription);
 
   new global.FlowTemplatesHelper().activateConnection(googledriveConnection);
 })(inputs, outputs);
@@ -1977,17 +1977,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Update Copy new record attachments to Google Drive">96f63976c3a2201054ffca568640dd62</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"d588f5b6c3a2201054ffca568640dd8b","name":"plan"}}</plan>
-        <snapshot>ac10f8c2d47ae010f8778cb18582be84</snapshot>
+        <snapshot>80098a23d4bae410f8778cb18582be92</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-03-01 07:47:34</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d588f5b6c3a2201054ffca568640dd8b</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>maint</sys_updated_by>
-        <sys_updated_on>2021-03-11 04:51:19</sys_updated_on>
+        <sys_updated_on>2021-03-16 03:10:45</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2043,10 +2043,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-03-01 07:47:33</sys_created_on>
         <sys_id>0588f5b6c3a2201054ffca568640dd2b</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="FT Cloud Storage">4d96a9bac362201054ffca568640ddff</sys_scope>
         <sys_updated_by>maint</sys_updated_by>
-        <sys_updated_on>2021-03-11 04:51:18</sys_updated_on>
+        <sys_updated_on>2021-03-16 03:10:44</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0588f5b6c3a2201054ffca568640dd2b"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2057,9 +2057,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-03-01 07:47:34</sys_created_on>
         <sys_id>0588f5b6c3a2201054ffca568640dd51</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>maint</sys_updated_by>
-        <sys_updated_on>2021-03-11 04:51:18</sys_updated_on>
+        <sys_updated_on>2021-03-16 03:10:44</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   var inputScope = inputs.flow_scope_sys_id;
   var newFlow = inputs.new_flow_sys_id;
@@ -2075,7 +2075,7 @@
   sn_flow.FlowTemplates.updateFlowActions(newFlow, '1', 'file_or_folder_name', folderName);
   
   // update folderpath onedrive
-  sn_flow.FlowTemplates.updateFlowActions(newFlow, '2', 'file_description', fileDescription);
+  sn_flow.FlowTemplates.updateFlowActions(newFlow, '3', 'file_description', fileDescription);
 
   new global.FlowTemplatesHelper().activateConnection(googledriveConnection);
 })(inputs, outputs);
@@ -3184,10 +3184,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-03-01 07:47:33</sys_created_on>
         <sys_id>0588f5b6c3a2201054ffca568640dd2b</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="FT Cloud Storage">4d96a9bac362201054ffca568640ddff</sys_scope>
         <sys_updated_by>maint</sys_updated_by>
-        <sys_updated_on>2021-03-11 04:51:18</sys_updated_on>
+        <sys_updated_on>2021-03-16 03:10:44</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0588f5b6c3a2201054ffca568640dd2b"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3198,9 +3198,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-03-01 07:47:34</sys_created_on>
         <sys_id>0588f5b6c3a2201054ffca568640dd51</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>maint</sys_updated_by>
-        <sys_updated_on>2021-03-11 04:51:18</sys_updated_on>
+        <sys_updated_on>2021-03-16 03:10:44</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   var inputScope = inputs.flow_scope_sys_id;
   var newFlow = inputs.new_flow_sys_id;
@@ -3216,7 +3216,7 @@
   sn_flow.FlowTemplates.updateFlowActions(newFlow, '1', 'file_or_folder_name', folderName);
   
   // update folderpath onedrive
-  sn_flow.FlowTemplates.updateFlowActions(newFlow, '2', 'file_description', fileDescription);
+  sn_flow.FlowTemplates.updateFlowActions(newFlow, '3', 'file_description', fileDescription);
 
   new global.FlowTemplatesHelper().activateConnection(googledriveConnection);
 })(inputs, outputs);
